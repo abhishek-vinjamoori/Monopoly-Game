@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Monopoly!</title>
+<link href='http://fonts.googleapis.com/css?family=Viga' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script src="jquery-1.11.0.js"></script>
+<script>
+$(document).ready(function(){
+		$(window).load(function(){
+
+			$("#logo").fadeIn(750, function(){
+				$("#logo").animate({top:'100px'}, 500, function (){
+					$('#ind').fadeIn(500);
+					$('#cod').fadeIn(500);
+					$('#cat').fadeIn(500, function(){
+						$('#logo').animate({left : '100px'}, 400);
+						$('#ind').animate({left : '100px'}, 500);
+						$('#cod').animate({left : '100px'}, 600);
+						$('#cat').animate({left : '100px'}, 700, function(){
+							$('#mat').fadeIn(500);
+							$('#line').fadeIn(500);
+							});
+
+						});
+					});
+				});
+			});
+		});
+</script>
+
+</head>
+
+<body>
+<div id=  "block">
+<div id="logo">
+<h1 id="hea">
+GAME.FUN.DO
+</h1>
+</div>
+<div id="ind" onmouseover="moved(this)" onmouseout="mok(this)" ><a href="monopoly.html" >New Game</a></div>
+<div id="cod" onmouseover="moved(this)" onmouseout="mok(this)" ><a href="instructions.html" target="new">Instructions</a></div>
+<p id="dino"></p>
+</div>
+<div id="fl">
+<img src="monopoly.jpg" alt="Monopoly board" height="100%" width="100%">
+</div>
+	<script>
+function moved(obj)
+{
+	obj.style.color = 'yellow';
+	obj.style.backgroundColor =  'dc143c';
+	//obj.style.fontSize = '30px';
+	//obj.style.height = '35px';
+}
+function mok(obj)
+{
+	obj.style.backgroundColor = 'dc143c';
+	obj.style.color = 'white';
+	//obj.style.fontSize = '25px';
+	//obj.style.height = '30px';
+}
+</script>
+<div id= "non"></div>
+<div id="line"></div>
+<div id = "mat">
+<img  id="ig" src="./Downloads/monopoly2.jpg" >
+<img  id="iv" src="./Downloads/monopoly21.jpg" >	
+<!--<h1 id="worl">Hello dudes!!!1</h1>
+<p id="sop"><i>Hello World.... I am pretty much excited making this blog<br> as this is my first blog. This is Sunand Puli but all call<br> me Puli. I am a dreamer. My eyes always see the sky</i></p>
+-->
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Monopoly Game</title>
+<meta charset ="UTF-8">
+<style>
+body{
+background-color:burlywood;
+}
+#name1{
+margin:7%;
+color:black;
+}
+#name2{
+margin:7%;
+color:blue;
+}
+#name3{
+margin:7%;
+color:yellow;
+}
+#name4{
+margin:7%;
+color:green;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="monopoly.css">
+</head>
+<body >
+<img src="start.png" id="start" width="90" height="90" class="list">
+<img src="security.png" id="security" width="90" height="90" class="list">
+<img src="trap.png" id="trap" width="90" height="90" class="list">
+<img src="+100.png" id="+100" width="90" height="90" class="list">
+<img src="atm.png" id="atm" width="90" height="90" class="list">
+<img src="basketball.png" id="basketball" width="90" height="90" class="list">
+<img src="bonus.png" id="bonus" width="90" height="90" class="list">
+<img src="nilgiri.png" id="nilgiri" width="90" height="90" class="list">
+<img src="dlf.png" id="dlf" width="90" height="90" class="list">
+<img src="farm.png" id="farm" width="90" height="90" class="list">
+<img src="fg.png" id="fg" width="90" height="90" class="list">
+<img src="football.jpg" id="footall" width="90" height="90" class="list">
+<img src="haircut.png" id="haircut" width="90" height="90" class="list">
+<img src="obh.png" id="obh" width="90" height="90" class="list">
+<img src="nbh.png" id="nbh" width="90" height="90" class="list">
+<img src="bakul.png" id="bakul" width="90" height="90" class="list">
+<img src="jagruti.png" id="jagruti" width="90" height="90" class="list">
+<img src="jail.png" id="jail" width="90" height="90" class="list">
+<img src="juice.png" id="juice" width="90" height="90" class="list">
+<img src="library.png" id="library" width="90" height="90" class="list">
+<img src="parking.png" id="parking" width="90" height="90" class="list">
+<img src="saranga.png" id="saranga" width="90" height="90" class="list">
+<img src="treasure.png" id="treasure" width="90" height="90" class="list">
+<img src="workspace.png" id="workspace" width="90" height="90" class="list">
+<img src="yoga.png" id="yoga" width="90" height="90" class="list">
+<img src="shop.jpg" id="shop" width="90" height="90" class="list">
+<img src="library.png" id="lib" width="90" height="90" class="list">
+<img src="hospital.jpg" id="hospital" width="90" height="90" class="list"> 
+<canvas id="board" height="610" width="1010" >Your browser does not support CANVAS.</canvas>
+<canvas id="board1" height="610" width="1010" >Your browser does not support CANVAS.</canvas>
+<canvas id="board2" height="610" width="1010" >Your browser does not support CANVAS.</canvas>
+<canvas id="board3" height="610" width="1010" >Your browser does not support CANVAS.</canvas>
+<canvas id="board5" height="610" width="1010" > Your browser does not support CANVAS.</canvas>
+<canvas id="board6" height="610" width="1010" > Your browser does not support CANVAS.</canvas>
+<canvas id="board4" height="610" width="1010" >Your browser does not support CANVAS.</canvas>
+<hr />
+<span  id="name1">Player 1</span>
+<span  id="name2">Player 2</span>
+<span  id="name3">Player 3</span>
+<span  id="name4">Player 4</span>
+<br>
+<button type="submit" id="Submit" onclick="start()">Submit</button>
+<div id="die1" class="dice">0</div>
+<button id="diebut" onclick="rollDice()">Roll Dice</button>
+<button id="yes" onclick="validatey()">Yes !</button>
+<button id="no" onclick="validaten()">Nope !</button>
+<script src="monopoly.js"></script>
+</body>
+</html>
+

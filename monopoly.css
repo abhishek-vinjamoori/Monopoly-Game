@@ -1,0 +1,42 @@
+@font-face {
+font-family:Exo-LightItalic;
+src:url(Exo-LightItalic.otf);
+}
+
+#board{
+	margin-top: 100px;
+	background-color:red;
+	position: relative;
+	font-family: Exo-LightItalic;
+}
+#board1,#board2,#board3,#board4,#board5,#board6{
+	font-family: Exo-LightItalic;
+	position: absolute;
+	margin-top: 100px;
+	margin-left: -1015px;
+	background-color: rgba(255,255,255,0);
+}
+
+#yes{
+	margin-left: 25%;
+}
+
+.list{
+display: none;
+position:absolute;
+z-index:100;
+border-style:solid;
+border-color:red;
+border-radius:10px;
+}
+ div.dice
+{
+ float:left;
+ width:32px;
+ background:#F5F5F5;
+ border:#999 1px solid;
+ padding:10px;
+ font-size:24px;
+ text-align:center;
+ margin:5px; 
+}
